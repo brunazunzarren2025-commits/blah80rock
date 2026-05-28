@@ -43,76 +43,76 @@
 }
 
 :root {
-  /* BLAH80 Cyberpunk Neon Theme */
-  --primary: #ff006e; /* Neon Magenta */
+  /* BLAH80 Red & White Rock Theme */
+  --primary: #ff0000; /* Vibrant Red */
   --primary-foreground: #ffffff;
-  --sidebar-primary: #ff006e;
+  --sidebar-primary: #ff0000;
   --sidebar-primary-foreground: #ffffff;
-  --chart-1: #00f5ff; /* Neon Cyan */
-  --chart-2: #ff006e; /* Neon Magenta */
-  --chart-3: #b537f2; /* Neon Purple */
-  --chart-4: #ffff00; /* Neon Yellow */
-  --chart-5: #00f5ff; /* Neon Cyan */
+  --chart-1: #ff3333;
+  --chart-2: #ff0000;
+  --chart-3: #cc0000;
+  --chart-4: #990000;
+  --chart-5: #660000;
   --radius: 0.65rem;
-  --background: #0a0e27; /* Deep Black */
+  --background: #0a0a0a; /* Pure Black */
   --foreground: #ffffff;
-  --card: #1a1f3a; /* Dark Blue-Black */
+  --card: #1a1a1a; /* Dark Gray */
   --card-foreground: #ffffff;
-  --popover: #1a1f3a;
+  --popover: #1a1a1a;
   --popover-foreground: #ffffff;
-  --secondary: #b537f2; /* Neon Purple */
+  --secondary: #333333;
   --secondary-foreground: #ffffff;
-  --muted: #333333;
-  --muted-foreground: #999999;
-  --accent: #00f5ff; /* Neon Cyan */
-  --accent-foreground: #0a0e27;
-  --destructive: #ff006e; /* Neon Magenta */
+  --muted: #555555;
+  --muted-foreground: #cccccc;
+  --accent: #ff0000; /* Red Accent */
+  --accent-foreground: #ffffff;
+  --destructive: #ff0000;
   --destructive-foreground: #ffffff;
   --border: #333333;
-  --input: #1a1f3a;
-  --ring: #00f5ff;
-  --sidebar: #0a0e27;
+  --input: #1a1a1a;
+  --ring: #ff0000;
+  --sidebar: #0a0a0a;
   --sidebar-foreground: #ffffff;
-  --sidebar-accent: #ff006e;
+  --sidebar-accent: #ff0000;
   --sidebar-accent-foreground: #ffffff;
   --sidebar-border: #333333;
-  --sidebar-ring: #00f5ff;
+  --sidebar-ring: #ff0000;
 }
 
 .dark {
-  /* BLAH80 Cyberpunk Neon Theme (Dark Mode) */
-  --primary: #ff006e;
+  /* BLAH80 Red & White Rock Theme (Dark Mode) */
+  --primary: #ff0000;
   --primary-foreground: #ffffff;
-  --sidebar-primary: #ff006e;
+  --sidebar-primary: #ff0000;
   --sidebar-primary-foreground: #ffffff;
-  --background: #0a0e27;
+  --background: #0a0a0a;
   --foreground: #ffffff;
-  --card: #1a1f3a;
+  --card: #1a1a1a;
   --card-foreground: #ffffff;
-  --popover: #1a1f3a;
+  --popover: #1a1a1a;
   --popover-foreground: #ffffff;
-  --secondary: #b537f2;
+  --secondary: #333333;
   --secondary-foreground: #ffffff;
-  --muted: #333333;
-  --muted-foreground: #999999;
-  --accent: #00f5ff;
-  --accent-foreground: #0a0e27;
-  --destructive: #ff006e;
+  --muted: #555555;
+  --muted-foreground: #cccccc;
+  --accent: #ff0000;
+  --accent-foreground: #ffffff;
+  --destructive: #ff0000;
   --destructive-foreground: #ffffff;
   --border: #333333;
-  --input: #1a1f3a;
-  --ring: #00f5ff;
-  --chart-1: #00f5ff;
-  --chart-2: #ff006e;
-  --chart-3: #b537f2;
-  --chart-4: #ffff00;
-  --chart-5: #00f5ff;
-  --sidebar: #0a0e27;
+  --input: #1a1a1a;
+  --ring: #ff0000;
+  --chart-1: #ff3333;
+  --chart-2: #ff0000;
+  --chart-3: #cc0000;
+  --chart-4: #990000;
+  --chart-5: #660000;
+  --sidebar: #0a0a0a;
   --sidebar-foreground: #ffffff;
-  --sidebar-accent: #ff006e;
+  --sidebar-accent: #ff0000;
   --sidebar-accent-foreground: #ffffff;
   --sidebar-border: #333333;
-  --sidebar-ring: #00f5ff;
+  --sidebar-ring: #ff0000;
 }
 
 @layer base {
@@ -136,24 +136,11 @@
 }
 
 @layer components {
-  /**
-   * Custom container utility that centers content and adds responsive padding.
-   *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
-   *
-   * Usage: <div className="container">...</div>
-   *
-   * For custom widths, use max-w-* utilities directly:
-   * <div className="max-w-6xl mx-auto px-4">...</div>
-   */
   .container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
+    padding-left: 1rem;
     padding-right: 1rem;
   }
 
@@ -164,172 +151,88 @@
 
   @media (min-width: 640px) {
     .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
+      padding-left: 1.5rem;
       padding-right: 1.5rem;
     }
   }
 
   @media (min-width: 1024px) {
     .container {
-      padding-left: 2rem; /* 32px - desktop padding */
+      padding-left: 2rem;
       padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
+      max-width: 1280px;
     }
   }
 }
 
-/* BLAH80 Custom Components and Animations */
+/* BLAH80 Custom Styles */
 
-/* Neon Glow Effects */
+/* Neon Glow Effects - Updated for Red */
 .neon-glow {
-  text-shadow: 0 0 10px rgba(255, 0, 110, 0.5), 0 0 20px rgba(0, 245, 255, 0.3);
-  animation: neon-pulse 2s ease-in-out infinite;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5), 0 0 20px rgba(255, 0, 0, 0.3);
 }
 
-.neon-glow-magenta {
-  box-shadow: 0 0 10px rgba(255, 0, 110, 0.5), 0 0 20px rgba(255, 0, 110, 0.3), inset 0 0 10px rgba(255, 0, 110, 0.1);
-}
-
-.neon-glow-cyan {
-  box-shadow: 0 0 10px rgba(0, 245, 255, 0.5), 0 0 20px rgba(0, 245, 255, 0.3), inset 0 0 10px rgba(0, 245, 255, 0.1);
+.neon-glow-red {
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.7), 0 0 30px rgba(255, 0, 0, 0.4);
 }
 
 .neon-border {
-  border: 2px solid #ff006e;
-  box-shadow: 0 0 10px rgba(255, 0, 110, 0.5), inset 0 0 10px rgba(255, 0, 110, 0.1);
+  border: 2px solid #ff0000;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5), inset 0 0 10px rgba(255, 0, 0, 0.2);
 }
 
-.neon-border-cyan {
-  border: 2px solid #00f5ff;
-  box-shadow: 0 0 10px rgba(0, 245, 255, 0.5), inset 0 0 10px rgba(0, 245, 255, 0.1);
+.neon-border-red {
+  border: 2px solid #ff0000;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.7), inset 0 0 10px rgba(255, 0, 0, 0.3);
 }
 
-/* Scan Lines Effect */
-.scan-lines {
-  position: relative;
-  overflow: hidden;
-}
-
-.scan-lines::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: repeating-linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.15),
-    rgba(0, 0, 0, 0.15) 1px,
-    transparent 1px,
-    transparent 2px
-  );
-  pointer-events: none;
-  animation: scan-lines-move 8s linear infinite;
-  z-index: 1;
-}
-
-@keyframes scan-lines-move {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(10px);
-  }
-}
-
-@keyframes neon-pulse {
-  0%, 100% {
-    text-shadow: 0 0 10px rgba(255, 0, 110, 0.5), 0 0 20px rgba(0, 245, 255, 0.3);
-  }
-  50% {
-    text-shadow: 0 0 20px rgba(255, 0, 110, 0.8), 0 0 40px rgba(0, 245, 255, 0.6);
-  }
-}
-
-/* Button Neon Styles */
+/* Button Styles */
 .btn-neon {
-  position: relative;
-  padding: 0.75rem 1.5rem;
-  font-weight: 700;
-  color: white;
+  background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+  color: #ffffff;
+  padding: 12px 32px;
+  border: 2px solid #ff0000;
+  border-radius: 4px;
+  font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  transition: all 300ms ease-out;
-  background: linear-gradient(135deg, #ff006e, #b537f2);
-  box-shadow: 0 0 20px rgba(255, 0, 110, 0.5);
-  border: 2px solid #ff006e;
+  letter-spacing: 0.05em;
   cursor: pointer;
-  font-family: 'Space Mono', monospace;
+  transition: all 300ms ease-out;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  font-family: 'Bebas Neue', 'Space Mono', monospace;
 }
 
 .btn-neon:hover {
-  box-shadow: 0 0 30px rgba(255, 0, 110, 0.8), 0 0 50px rgba(0, 245, 255, 0.5);
+  background: linear-gradient(135deg, #ff3333 0%, #ff0000 100%);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.8), 0 0 40px rgba(255, 0, 0, 0.5);
   transform: scale(1.05);
 }
 
 .btn-neon:active {
-  transform: scale(0.98);
+  transform: scale(0.97);
 }
 
 /* Typography */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&display=swap');
+
 .font-display {
-  font-family: 'Orbitron', 'Space Mono', monospace;
-  font-weight: 900;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 700;
   letter-spacing: 0.05em;
 }
 
 .font-heading {
-  font-family: 'Space Mono', monospace;
+  font-family: 'Bebas Neue', sans-serif;
   font-weight: 700;
-  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .font-body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Space Mono', monospace;
   font-weight: 400;
 }
 
-/* Hero Text */
-.hero-title {
-  font-size: clamp(2rem, 8vw, 4rem);
-  font-family: 'Orbitron', 'Space Mono', monospace;
-  font-weight: 900;
-  color: white;
-  text-shadow: 0 0 20px rgba(255, 0, 110, 0.6), 0 0 40px rgba(0, 245, 255, 0.4);
-  letter-spacing: 0.05em;
-}
-
-.hero-subtitle {
-  font-size: clamp(1rem, 3vw, 1.5rem);
-  font-family: 'Space Mono', monospace;
-  color: #00f5ff;
-  text-shadow: 0 0 10px rgba(0, 245, 255, 0.5);
-}
-
-/* Smooth scroll behavior */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Fade in animation */
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.fade-in {
-  animation: fade-in 0.6s ease-out;
-}
-
-
-/* Additional animations for enhanced interactivity */
+/* Animations */
 @keyframes slide-in-left {
   from {
     opacity: 0;
@@ -354,10 +257,10 @@ html {
 
 @keyframes glow-pulse {
   0%, 100% {
-    box-shadow: 0 0 10px rgba(255, 0, 110, 0.5), 0 0 20px rgba(0, 245, 255, 0.3);
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5), 0 0 20px rgba(255, 0, 0, 0.3);
   }
   50% {
-    box-shadow: 0 0 20px rgba(255, 0, 110, 0.8), 0 0 40px rgba(0, 245, 255, 0.6);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8), 0 0 40px rgba(255, 0, 0, 0.6);
   }
 }
 
@@ -378,7 +281,7 @@ button:focus-visible,
 a:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-  outline: 2px solid #00f5ff;
+  outline: 2px solid #ff0000;
   outline-offset: 2px;
 }
 
@@ -391,4 +294,43 @@ textarea:focus-visible {
 
 .animate-spin {
   animation: spin 1s linear infinite;
+}
+
+/* Dynamic Stroke Effect */
+.stroke-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.stroke-effect::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 0, 0, 0.3), transparent);
+  animation: stroke-move 3s infinite;
+}
+
+@keyframes stroke-move {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Red Accent Lines */
+.red-line {
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #ff0000, transparent);
+  margin: 20px 0;
+}
+
+.red-accent {
+  color: #ff0000;
+  font-weight: bold;
 }

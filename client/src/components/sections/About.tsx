@@ -7,14 +7,14 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Image */}
           <div className="relative">
-            <div className="neon-border-cyan p-2">
+            <div className="neon-border p-2">
               <img
                 src={ABOUT_IMAGE}
                 alt="BLAH80 - Underground Bar"
                 className="w-full h-auto rounded-lg"
               />
             </div>
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 border-2 border-magenta-500/30 rounded-full opacity-50"></div>
+            <div className="absolute -bottom-4 -right-4 w-32 h-32 border-2 border-red-500/30 rounded-full opacity-50"></div>
           </div>
 
           {/* Content */}
@@ -39,10 +39,10 @@ export default function About() {
 
             {/* Influences */}
             <div className="mt-8 pt-8 border-t border-border">
-              <h3 className="font-heading text-xl mb-4 text-cyan-300 uppercase">Influências Musicais</h3>
+              <h3 className="font-heading text-xl mb-4 text-red-500 uppercase">Influências Musicais</h3>
               <div className="flex flex-wrap gap-2">
                 {['Legião Urbana', 'Titãs', 'Paralamas', 'Ultraje a Rigor', 'Engenheiros', 'RPM', 'Barão Vermelho'].map((band) => (
-                  <span key={band} className="px-3 py-1 border border-magenta-500/50 text-sm text-magenta-300 rounded">
+                  <span key={band} className="px-3 py-1 border border-red-500/50 text-sm text-red-500 rounded">
                     {band}
                   </span>
                 ))}

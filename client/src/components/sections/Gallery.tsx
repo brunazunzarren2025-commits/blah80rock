@@ -40,7 +40,7 @@ export default function Gallery() {
           {GALLERY_ITEMS.map((item, idx) => (
             <div
               key={idx}
-              className="group relative overflow-hidden rounded-lg neon-border cursor-pointer hover:neon-glow-magenta transition-all duration-300"
+              className="group relative overflow-hidden rounded-lg neon-border cursor-pointer hover:neon-glow-red transition-all duration-300"
             >
               <img
                 src={item.image}

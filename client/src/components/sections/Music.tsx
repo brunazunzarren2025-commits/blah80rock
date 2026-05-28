@@ -42,7 +42,7 @@ export default function Music() {
 
         {/* Spotify Embed */}
         <div className="mb-16 flex justify-center">
-          <div className="w-full max-w-md neon-border-cyan p-6 rounded-lg">
+          <div className="w-full max-w-md neon-border p-6 rounded-lg">
             <div className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg flex items-center justify-center">
               <MusicIcon className="w-16 h-16 text-primary opacity-50" />
             </div>
@@ -67,7 +67,7 @@ export default function Music() {
             {SONGS.map((song, idx) => (
               <div
                 key={idx}
-                className="neon-border-cyan p-4 rounded-lg hover:neon-glow-cyan transition-all duration-300 flex items-center justify-between group"
+                className="neon-border p-4 rounded-lg hover:neon-glow-red transition-all duration-300 flex items-center justify-between group"
               >
                 <div className="flex items-center gap-4 flex-1">
                   <div className="w-10 h-10 bg-primary/20 rounded flex items-center justify-center group-hover:bg-primary/40 transition-colors">

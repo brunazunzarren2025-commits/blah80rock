@@ -29,8 +29,8 @@ export default function Hero() {
       {/* Content */}
       <div className="hero-content relative z-10 container mx-auto px-4 text-center">
         <div className="mb-6 inline-block">
-          <div className="neon-border-cyan px-6 py-3">
-            <span className="font-heading text-sm uppercase tracking-widest text-cyan-300">
+          <div className="neon-border px-6 py-3">
+            <span className="font-heading text-sm uppercase tracking-widest text-red-500">
               Desde 2016
             </span>
           </div>
@@ -57,7 +57,7 @@ export default function Hero() {
           </button>
           <button
             onClick={() => scrollToSection('agenda')}
-            className="px-6 py-3 font-bold text-white uppercase tracking-wider transition-all duration-300 border-2 border-cyan-400 hover:bg-cyan-400/10 hover:shadow-lg hover:shadow-cyan-400/50"
+            className="px-6 py-3 font-bold text-red-500 uppercase tracking-wider transition-all duration-300 border-2 border-red-500 hover:bg-red-500/10 hover:shadow-lg hover:shadow-red-500/50"
           >
             Agenda de Shows
           </button>
@@ -65,8 +65,8 @@ export default function Hero() {
       </div>
 
       {/* Floating Elements */}
-      <div className="absolute top-20 left-10 w-32 h-32 border-2 border-magenta-500/30 rounded-full animate-pulse opacity-20 hidden md:block"></div>
-      <div className="absolute bottom-20 right-10 w-40 h-40 border-2 border-cyan-400/30 rounded-full animate-pulse opacity-20 hidden md:block" style={{ animationDelay: '0.5s' }}></div>
+      <div className="absolute top-20 left-10 w-32 h-32 border-2 border-red-500/30 rounded-full animate-pulse opacity-20 hidden md:block"></div>
+      <div className="absolute bottom-20 right-10 w-40 h-40 border-2 border-red-500/30 rounded-full animate-pulse opacity-20 hidden md:block" style={{ animationDelay: '0.5s' }}></div>
     </section>
   );
 }

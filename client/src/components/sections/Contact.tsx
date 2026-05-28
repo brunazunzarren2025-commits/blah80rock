@@ -39,19 +39,19 @@ export default function Contact() {
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {/* Contact Info */}
-          <div className="neon-border-cyan p-6 rounded-lg text-center">
+          <div className="neon-border p-6 rounded-lg text-center">
             <Mail className="w-8 h-8 text-primary mx-auto mb-4" />
             <h3 className="font-heading text-white mb-2">Email</h3>
             <p className="text-gray-400 font-body">contato@blah80.com.br</p>
           </div>
 
-          <div className="neon-border-cyan p-6 rounded-lg text-center">
+          <div className="neon-border p-6 rounded-lg text-center">
             <Phone className="w-8 h-8 text-primary mx-auto mb-4" />
             <h3 className="font-heading text-white mb-2">Telefone</h3>
             <p className="text-gray-400 font-body">(31) 99999-8888</p>
           </div>
 
-          <div className="neon-border-cyan p-6 rounded-lg text-center">
+          <div className="neon-border p-6 rounded-lg text-center">
             <MapPin className="w-8 h-8 text-primary mx-auto mb-4" />
             <h3 className="font-heading text-white mb-2">Localização</h3>
             <p className="text-gray-400 font-body">Belo Horizonte, MG</p>

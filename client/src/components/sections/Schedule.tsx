@@ -48,13 +48,13 @@ export default function Schedule() {
           {SHOWS.map((show, idx) => (
             <div
               key={idx}
-              className="neon-border p-6 rounded-lg hover:neon-glow-magenta transition-all duration-300 group"
+              className="neon-border p-6 rounded-lg hover:neon-glow-red transition-all duration-300 group"
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <div className="flex items-center gap-2 mb-2">
                     <Calendar className="w-5 h-5 text-primary" />
-                    <span className="font-heading text-sm uppercase text-cyan-300">{show.day}</span>
+                    <span className="font-heading text-sm uppercase text-red-500">{show.day}</span>
                   </div>
                   <p className="font-display text-2xl text-white">{show.date}</p>
                 </div>

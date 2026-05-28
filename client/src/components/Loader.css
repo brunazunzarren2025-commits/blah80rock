@@ -1,4 +1,4 @@
-/* Loader Component Styles */
+/* Loader Component Styles - BLAH80 Red Theme */
 
 .loader-container {
   position: fixed;
@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0a0e27 100%);
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
   z-index: 9999;
   overflow: hidden;
 }
@@ -17,7 +17,7 @@
 .loader-background {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at center, rgba(255, 0, 110, 0.05) 0%, transparent 70%);
+  background: radial-gradient(circle at center, rgba(255, 0, 0, 0.05) 0%, transparent 70%);
   animation: pulse-bg 3s ease-in-out infinite;
 }
 
@@ -42,7 +42,7 @@
   position: absolute;
   width: 300px;
   height: 300px;
-  background: radial-gradient(circle, rgba(255, 0, 110, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 0, 0, 0.1) 0%, transparent 70%);
   border-radius: 50%;
   filter: blur(40px);
   animation: smoke-drift 8s ease-in-out infinite;
@@ -52,21 +52,21 @@
   bottom: -100px;
   left: 10%;
   animation-delay: 0s;
-  background: radial-gradient(circle, rgba(255, 0, 110, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 0, 0, 0.15) 0%, transparent 70%);
 }
 
 .smoke-2 {
   bottom: -80px;
   left: 50%;
   animation-delay: 2s;
-  background: radial-gradient(circle, rgba(0, 245, 255, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 0, 0, 0.1) 0%, transparent 70%);
 }
 
 .smoke-3 {
   bottom: -100px;
   right: 10%;
   animation-delay: 4s;
-  background: radial-gradient(circle, rgba(181, 55, 242, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 0, 0, 0.1) 0%, transparent 70%);
 }
 
 @keyframes smoke-drift {
@@ -107,35 +107,35 @@
 .light-1 {
   top: -100px;
   left: 5%;
-  background: linear-gradient(to bottom, #ff006e, transparent);
+  background: linear-gradient(to bottom, #ff0000, transparent);
   animation-delay: 0s;
 }
 
 .light-2 {
   top: -100px;
   left: 25%;
-  background: linear-gradient(to bottom, #00f5ff, transparent);
+  background: linear-gradient(to bottom, #ff0000, transparent);
   animation-delay: 0.5s;
 }
 
 .light-3 {
   top: -100px;
   left: 50%;
-  background: linear-gradient(to bottom, #b537f2, transparent);
+  background: linear-gradient(to bottom, #ff0000, transparent);
   animation-delay: 1s;
 }
 
 .light-4 {
   top: -100px;
   left: 75%;
-  background: linear-gradient(to bottom, #00f5ff, transparent);
+  background: linear-gradient(to bottom, #ff0000, transparent);
   animation-delay: 0.5s;
 }
 
 .light-5 {
   top: -100px;
   right: 5%;
-  background: linear-gradient(to bottom, #ff006e, transparent);
+  background: linear-gradient(to bottom, #ff0000, transparent);
   animation-delay: 0s;
 }
 
@@ -168,9 +168,9 @@
 
 .amp-bar {
   width: 6px;
-  background: linear-gradient(to top, #ff006e, #00f5ff);
+  background: linear-gradient(to top, #ff0000, #ff3333);
   border-radius: 3px;
-  box-shadow: 0 0 10px rgba(255, 0, 110, 0.8), 0 0 20px rgba(0, 245, 255, 0.6);
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.6);
   animation: amp-pulse 0.6s ease-in-out infinite;
 }
 
@@ -212,22 +212,22 @@
 
 /* Logo */
 .loader-logo {
-  font-family: 'Orbitron', 'Space Mono', monospace;
+  font-family: 'Bebas Neue', 'Space Mono', monospace;
   font-size: 4rem;
   font-weight: 900;
   color: white;
-  text-shadow: 0 0 20px rgba(255, 0, 110, 0.8), 0 0 40px rgba(0, 245, 255, 0.6);
+  text-shadow: 0 0 20px rgba(255, 0, 0, 0.8), 0 0 40px rgba(255, 0, 0, 0.6);
   letter-spacing: 0.1em;
   animation: logo-glow 2s ease-in-out infinite;
 }
 
 @keyframes logo-glow {
   0%, 100% {
-    text-shadow: 0 0 20px rgba(255, 0, 110, 0.5), 0 0 40px rgba(0, 245, 255, 0.3);
+    text-shadow: 0 0 20px rgba(255, 0, 0, 0.5), 0 0 40px rgba(255, 0, 0, 0.3);
     transform: scale(1);
   }
   50% {
-    text-shadow: 0 0 40px rgba(255, 0, 110, 0.8), 0 0 80px rgba(0, 245, 255, 0.6), 0 0 120px rgba(181, 55, 242, 0.4);
+    text-shadow: 0 0 40px rgba(255, 0, 0, 0.8), 0 0 80px rgba(255, 0, 0, 0.6), 0 0 120px rgba(255, 0, 0, 0.4);
     transform: scale(1.05);
   }
 }
@@ -238,16 +238,16 @@
   gap: 8px;
   font-family: 'Space Mono', monospace;
   font-size: 1.2rem;
-  color: #00f5ff;
-  text-shadow: 0 0 10px rgba(0, 245, 255, 0.5);
+  color: #ff0000;
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
 }
 
 .dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #00f5ff;
-  box-shadow: 0 0 10px rgba(0, 245, 255, 0.8);
+  background: #ff0000;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
   animation: dot-bounce 1.4s infinite;
 }
 
@@ -280,8 +280,8 @@
   bottom: 40px;
   font-family: 'Space Mono', monospace;
   font-size: 1rem;
-  color: #ff006e;
-  text-shadow: 0 0 10px rgba(255, 0, 110, 0.5);
+  color: #ff0000;
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
   letter-spacing: 0.05em;
   animation: subtitle-fade 2s ease-in-out infinite;
 }

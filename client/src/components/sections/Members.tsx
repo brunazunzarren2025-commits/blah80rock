@@ -50,7 +50,7 @@ export default function Members() {
             return (
               <div
                 key={idx}
-                className="group neon-border-cyan p-6 rounded-lg hover:neon-glow-cyan transition-all duration-300"
+                className="group neon-border p-6 rounded-lg hover:neon-glow-red transition-all duration-300"
                 style={{ animationDelay: `${idx * 100}ms` }}
               >
                 <div className="mb-4 flex justify-center">
@@ -63,7 +63,7 @@ export default function Members() {
                   {member.name}
                 </h3>
 
-                <p className="text-cyan-300 text-center font-heading text-sm uppercase mb-3">
+                <p className="text-red-500 text-center font-heading text-sm uppercase mb-3">
                   {member.instrument}
                 </p>
 
