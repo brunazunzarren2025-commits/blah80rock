@@ -93,7 +93,8 @@ function vitePluginManusDebugCollector() {
 // =============================================================================
 
 export default defineConfig({
-base: "./",
+  base: "/",
+
   plugins: [
     react(),
     tailwindcss(),
