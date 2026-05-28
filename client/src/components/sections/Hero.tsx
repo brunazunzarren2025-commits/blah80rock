@@ -1,6 +1,6 @@
 import './Hero.css';
 
-const HERO_IMAGE = '/manus-storage/pasted_file_ZLPeNV_image_9fb9defb.png';
+const HERO_IMAGE = '/hero-bg.png';
 
 export default function Hero() {
   const scrollToSection = (id: string) => {
