@@ -2,28 +2,21 @@ import { Music, Mic2, Zap } from 'lucide-react';
 
 const MEMBERS = [
   {
-    name: 'João Silva',
-    instrument: 'Vocal',
+    name: 'Fabiano Gaspar',
+    instrument: 'Vocal / Guitarra',
     icon: Mic2,
     description: 'Voz potente e carisma de palco',
     socials: { instagram: '#', youtube: '#' },
   },
   {
-    name: 'Carlos Mendes',
-    instrument: 'Guitarra',
+    name: 'XXXXXXXXXXX',
+    instrument: 'Contrabaixo',
     icon: Zap,
     description: 'Riffs memoráveis e energia pura',
     socials: { instagram: '#', youtube: '#' },
   },
   {
-    name: 'Bruno Costa',
-    instrument: 'Baixo',
-    icon: Music,
-    description: 'Groove que faz o público dançar',
-    socials: { instagram: '#', youtube: '#' },
-  },
-  {
-    name: 'Pedro Oliveira',
+    name: 'XXXXXXXXXXXX',
     instrument: 'Bateria',
     icon: Zap,
     description: 'Ritmo impecável e presença marcante',
