@@ -1,4 +1,4 @@
-const ABOUT = '/banda.png';
+const ABOUT_IMAGE = '/banda.png';
 export default function About() {
   return (
     <section id="sobre" className="py-20 md:py-32 bg-gradient-to-b from-background to-card">
