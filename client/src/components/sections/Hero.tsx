@@ -1,6 +1,6 @@
 import './Hero.css';
 
-const HERO_IMAGE = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663565191423/BckekaE8RGruQE9PtoTmzs/blah80-band-silhouette-fLpxrnjjjwZRL5EFrvg5KN.webp';
+const HERO_IMAGE = '/manus-storage/pasted_file_ZLPeNV_image_9fb9defb.png';
 
 export default function Hero() {
   const scrollToSection = (id: string) => {
