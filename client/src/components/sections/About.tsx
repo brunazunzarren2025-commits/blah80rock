@@ -1,5 +1,4 @@
-const ABOUT_IMAGE = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663565191423/BckekaE8RGruQE9PtoTmzs/blah80-underground-bar-SAYokkYLZjBBwactiVxBQ.webp';
-
+const HERO_IMAGE = '/banda.png';
 export default function About() {
   return (
     <section id="sobre" className="py-20 md:py-32 bg-gradient-to-b from-background to-card">
