@@ -93,8 +93,7 @@ function vitePluginManusDebugCollector() {
 // =============================================================================
 
 export default defineConfig({
-  base: "/blah80rock/",
-
+base: "./",
   plugins: [
     react(),
     tailwindcss(),
